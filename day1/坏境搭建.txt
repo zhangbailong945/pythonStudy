@@ -1,0 +1,15 @@
+坏境搭建
+python坏境安装
+一、选择最新的python版本下载python for windows版本：https://www.python.org/downloads/
+二、选择自定义安装，目录选择c:\python
+三、坏境变量：我的电脑-》属性-》高级设置=》坏境变量=》系统变量-》path=>结尾添加c:\python;
+四、ctrl+r=>cmd=>python -v 测试python坏境是否正常
+
+编辑器IDEA选择VS code
+一、选择最新的vscode编辑器：https://code.visualstudio.com/
+二、自定义安装
+三、打开vs CODE=》shift+ctrl+x(打开插件搜索工具)=》键入python=》选择第一个
+四、安装python pylint(不然VScode老报错)，ctrl+r》cmd》python -m pip install pylint
+
+
+
