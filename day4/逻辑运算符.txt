@@ -1,0 +1,5 @@
+ptyhon 支持逻辑运算符
+and  布尔 与 x and y 如果x为false,x and y 返回false,否则返回y的计算值
+or   布尔 或 x or y 如果x为true，返回x的值，否则返回y的值。
+not  布尔 非 not x 如果x为true，则返回false,否则返回true.
+
