@@ -1,0 +1,102 @@
+一、字符串 
+
+1.格式："(双引号)或者'(单引号)
+
+2.转义字符
+
+\ 续行符
+\\反斜杠符号
+\*单引号
+\"双引号
+\a响铃
+\b退格
+\e转义
+\000空
+\n转行
+\v 纵向制表符
+\t 横向制表符
+\r 回车
+\f 换页
+\oyy 八进制
+\xyy 十六进制
+\other 其他字符以普通格式输出
+
+3.字符串运算符
+
++  字符串连接符
+*  重复输出字符串
+[] 通过索引获取字符串中的字符
+[x:y] 截取字符串中的一部分
+in  如果字符串中包含给定的字符返回true
+not in 如果字符串中包含给定的字符返回true
+r/R 原始字符串
+% 格式化字符串
+
+4.格式化字符串
+
+%c 格式化字符及其ASCII码
+%s 格式化字符串
+%d 格式化整数
+%u 格式化无符号整型
+%o 格式化八进制数
+%x 格式化无符号十六进制
+%X 格式化无符号十六机制（大写）
+%f 格式化浮点数，可指定小数点后的精度
+%e 用科学计数法格式化浮点数
+%E 同上
+%g %f和%e的简写
+%G %f和%E的简写
+%p 用十六进制数格式化变量的地址
+
+5.python 三引号
+1.python三引号允许一个字符串跨多行，字符串中可以包含换行符，制表符以及其他特殊字符。
+
+6.unicode字符串
+1.在python2中，普通字符串是8位ASCII编码进行存储的，而Unicode字符串则存储为16位unicode字符串，这样能够表示更多的字符集。使用的语法是在字符串前面加上前缀u.
+2.在python3中，所有的字符串都是unicode字符串.
+
+7.python字符串内建函数：
+1.capitalize() 将字符串的第一个字符转换为大写
+2.center(width,fillchar) 返回一个指定宽度width居中的字符串，fillchar为填充字符。默认为空格。
+3.count(str,beg=0,end=len(sring)) 返回str在字符串中出现的字数，beg和end表示指定范围
+4.bytes.decode(encoding='utf-8',error='strict') 编码给定的byges对象，str.encode()来编码返回。
+5.encode(encoding='utf-8',error='strict') 以encoding指定的编码格式编码字符串，如果出错默认报一个ValueError的异常，除非error指定的是'ignore'或者'replace'
+6.endswith(suffix,beg=0,end=len(string)) 检查字符串是否已obj结束，beg和end指定返回。
+7.expandtabs(tabsize=8) 把字符串string中的tab符号转换为空格,tab符号默认的空格是8.
+8.find(str,beg=0,len(string)) 检测str是否包含在字符串中,beg和end表示范围。
+9.index(str,beg=0,len(string))跟find方法一样，str不存在则报异常》
+10.isalnum() 如果字符串只是有一个字符并且所有字符都是字母或数字则返回true.
+11.isalpha() 如果字符串至少有一个字符并且所有字符都是字母则返回true。
+12.isdigit() 如果字符串中只包含数字则返回ture.
+13.islower() 如果字符串中包含至少一个区分大小写的字符，并且所有这些字符都是小写则返回true.
+14.isnumeric() 字符串值包含数字返回true。
+15.isspace() 如果字符串中只包含空白，则返回true.
+16.istitle()  如果字符串是标题化，则返回true.
+17.isupper()  如果字符串中至少包含一个区分大小写的字符，并且这些字符都是大写，则返回true.
+18.join(seq)  以指定字符串作为分隔符，将seq中所有的元素合并为一个新的字符串。
+19.len(string) 返回字符串长度
+20.ljust(width[,fillchar]) 返回一个原字符串左对齐，并使用fillchar填充长度width的新字符串，fillchar默认为空格。
+21.lower() 转换字符串所有大写的字符为小写
+22.lstrip() 截取字符串左边的空格或指定字符。
+23.maketrans() 创建字符映射转换表，对于接受两个参数的最简单的调用方式，第一个参数是字符串，表示需要转换的字符，第二个参数也是字符串表示转换的目标。
+24.max(str) 返回字符串str中最大的字幕
+25.min(str) 返回字符串str中最小的字幕
+26.replace(old,new[,max]) 将字符串中的old替换为new,如果max指定，则替换不超过max次。
+27.rfind(str,beg=0,end=len(string)) 类似于find()函数，不过是从右边开始查找。
+28.rindex() 从右边开始
+29.rjust() 返回一个原字符串右对齐。
+30.rstrip() 删除字符串末尾的空格。
+31.split(str="",num=string.count(str)) 以str为分隔符截取字符串，如果num有指定值，则仅截取num个字符串。
+32.splitlines[keepends] 按照\r \r\n \n分割，返回一个包含各行作为元素的列表。
+33.startwith(str,beg,end) 检查字符串是否已obj开头。
+34.strip([chars])  在字符串中执行lstrip()和rstrip()
+35.swapcase() 将字符串中大写转换为小写，小写转换为大写。
+36.title() 返回标题化的字符串。
+37.translate(table,deletechars="") 根据str给出表转换string的字符串，要过滤掉的字符放在deletechars(参数中)
+38.upper() 将字符串中的小写转换为大写。
+39.zfill(width) 返回长度为width的字符串，原字符串右对齐，前面填充0.
+40.isdecimal() 检查字符串是否包含十进制字符，是true,不是false。
+
+
+
+

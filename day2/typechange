@@ -1,0 +1,20 @@
+a='3'
+b=1234
+c='12456'
+d='c'
+#数据类型转换
+print(int(a))    #整型转换int(x)
+print(float(a))   #浮点数转换float(x)
+print(complex(4))  #创建一个复数complex(x)
+print(str(b))     #字符串转换str(x)
+print(isinstance(a,str))
+print(repr(a))   #将对象转换为字符串表达式repr(x)
+print(eval(a))  #用来计算字符串中有效的python表达式,并返回一个对象
+print(tuple(c)) #将序列转换一个元组
+print(list(c)) #将序列转换为一个列表
+print(set(c))  #将序列转换为一个集合
+print(frozenset(c)) #将转换为不可变集合
+print(chr(b))   #将一个整数转换为一个字符
+print(ord(d))  #将一个字符串转换为整数值
+print(hex(b))  #将一个整数转换为一个十六进制字符串
+print(oct(b))  #将一个整数转换为一个八进制字符串
