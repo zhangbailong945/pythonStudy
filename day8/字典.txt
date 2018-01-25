@@ -4,3 +4,16 @@
 2.键值对必须唯一，如果字典中出现两个相同的键，则取最后一个键的值。
 3.格式{}
 4.字典的值可以是python中的任意对象，但是键必须一致。
+5.字典函数
+(1)、dict.clear() 删除字典内所有元素
+(2)、dict.copy() 返回一个字典的浅复制
+(3)、dict.fromkeys() 创建一个新字典，以序列seq元素作为字典的键，val为字典所有键对应的初始值。
+(4)、dict.get(key)  返回指定键的值
+(5)、key in dict 如果键在字典类返回true,否则返回false.
+(6)、dict.items() 以列表返回遍历的(键，值)元组数组
+(7)、dict.keys() 以列表返回字典中所有的键
+(8)、dict.setdefault(key,default=none) 和get()类似，如果键
+(9)、dict.upate(dict2) 把字典2的键值对更新到dict中
+(10)、dict.values() 以列表返回字典中的所有值
+(11)、pop(key,default) 删除字典给定键key所对应的值，返回值为被删除的值。 
+(12)、popitem() 随机返回并删除字典中的键值对
