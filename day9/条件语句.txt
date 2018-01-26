@@ -1,0 +1,20 @@
+一、if语句
+
+1.if语句格式：
+if condition1:
+    statement1
+elif condition2:
+    statement2
+else:
+    statement3
+
+2.if中常用的操作运算符
+<    小于
+<=   小于或等于
+>    大于
+>=   大于或等于
+==   等于，比较对象是否相等
+!=   不等于
+
+3.if嵌套
+

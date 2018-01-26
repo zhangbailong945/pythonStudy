@@ -1,0 +1,21 @@
+while 循环：
+1.格式：
+while 判断条件:
+    语句
+2.无限循环（死循环）,同设置条件永远不为false
+3.while循环使用else语句
+4.简单语句组
+flag=1
+while(flag):print('hello')
+
+二、for语句
+1.python for循环可以遍历任何序列的项目，列表，字符串等
+2.格式
+for  var in seq:
+    statements
+else:
+    statements
+3.可以使用break跳出当前循环
+4.range()函数，生成数字序列
+5.break语句可以跳出for和while循环体。如果你从for或while循环中终止，任何对应的else块将不执行。
+6.pass语句,是空语句，是为了保持程序结构的完整性。
