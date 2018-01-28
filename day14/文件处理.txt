@@ -1,0 +1,17 @@
+文件方法：
+1.file.close() 关闭文件。关闭文件不能再进行读写操作
+2.file.flush() 刷新文件内部缓冲，直接把内部缓冲区的数据立刻写入文件，而不是被动的等待输出缓冲区写入。
+3.file.fileno() 返回一个整型的文件描述符，可以用在os模块的read方法等一些底层操作上。
+4.file.isatty() 如果文件连接到一个终端设备返回true,否则返回false.
+5.file.next() 返回文件下一行
+6.file.read(size) 从文件中读取指定的字节数，如果未给定或为负则读取所有。
+7.file.readline(size) 读取整行，包括"\n"字符。
+8.file.readlines(sizeint) 读取所有行并返回类别，若给定sizeint>0，返回综合大约为sizeint字节的行，实际读取值可能比sizeint较大，因为需要冲田缓冲区。
+9.file.seek(offset,[whence]) 设置文件当前位置
+10.file.tell() 返回文件当前位置
+11.file.truncate(size) 从文件的首行首字符开始截断，截断文件为size个字符，无size表示从当前位置截断；截断之后V后面的所有字符被删除，其中windows系统下换行代表2个字符大小。
+12.file.write(str) 将字符串写入文件，没有返回值。
+13.file.writelines(sequence) 向文件写入一个序列字符串列表，如果需要换行则要自己加入每行的换行符。
+
+
+
