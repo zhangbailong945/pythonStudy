@@ -1,3 +1,16 @@
 数据库连接
 1.安装mysql数据库 python -m pip install pymyadmin
-2.数据库连接
+2.数据库连接步骤
+import pymysql
+#打开数据库连接
+db=pymysql.connect("localhost","数据库账号","数据库密码","数据库名称")
+cursor=db.cursor()
+sql="create table()"
+cursor.execute(sql)
+db.close()
+
+3.数据库查询操作
+(1)、fetchone():改方法获取下一个查询结果集。结果集是一个对象
+(2)、fetchall()接受全部的返回结果行
+(3)、rowcount():这 是一个只读属性，并返回执行execute()方法后影响的行数。
+
